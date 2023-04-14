@@ -1,0 +1,1 @@
+Repositorio dedicado a POO, primordialmente em python, e as possibilidade, vantagens e boas práticas de uso.
