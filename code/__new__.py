@@ -28,3 +28,6 @@ A = SingleTon()
 B = SingleTon()
 
 print(f"{True if A == B else False}")
+
+
+print("so vai")
