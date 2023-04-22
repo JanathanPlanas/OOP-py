@@ -77,9 +77,7 @@ class Card:
             raise ValueError("Valor de carta inválida")
 
 
-
 class Deck:
-
 
     def __init__(self) -> None:
         self.cards = self.generate_deck()
@@ -100,23 +98,19 @@ class Deck:
 
         self.cards = self.generate_deck()
 
-
     def show(self):
 
         for card in self.cards:
 
             print(card.show())
 
-
     def append_card(self, card: Card):
 
         self.cards.append(card)
 
-
     def pop_card(self):
 
         return self.cards.pop()
-
 
     def shuffle(self):
 
@@ -125,14 +119,13 @@ class Deck:
             self.cards[card_i], self.cards[card_j] = self.cards[card_j], self.cards[card_i]
 
 
-
 class Player:
 
     def __init__(self, person_name) -> None:
         self.name = person_name
         self.hand = []
 
-    def pick_card(self, deck : Deck):
+    def pick_card(self, deck: Deck):
 
         self.hand.append(deck.pop_card())
 
@@ -150,24 +143,20 @@ class Player:
             print(card.show())
 
 
-
-
-
-
 deck = Deck()
 deck.shuffle()
 
-player_1 =Player("Johns")
+player_1 = Player("Johns")
 player_2 = Player("Ze")
 
 
 print('Johs')
-player_1.build_hand(deck,1)
+player_1.build_hand(deck, 1)
 player_1.show()
 
 
 print("Ze")
-player_2.build_hand(deck,2)
+player_2.build_hand(deck, 2)
 player_2.show()
 
 
